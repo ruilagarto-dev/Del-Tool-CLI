@@ -3,7 +3,10 @@
 Este projeto fornece um utilitário de linha de comandos chamado `del` que permite eliminar ficheiros e pastas diretamente a partir do terminal. Ele suporta tanto ficheiros únicos quanto pastas com conteúdo.
 
 ## Demostração
-![Demonstração do script](demo/rmx-demo.gif)
+<p align="center">
+  <img src="demo/rmx-demo.gif" alt="Demonstração do script" />
+</p>
+
 
 
 ## 🎯 Por que criei este script?
