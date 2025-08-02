@@ -45,6 +45,7 @@ Se quiser remover o comando `del`do sistema, execute.
 ```bash
 bash uninstall.sh
 ```
+
 ## ❗ Atenção
 Este script elemina ficheiros e pastas permanetemente, sem enviar para a reciclagem/lixo.<br> 
 Use com cuidado!
