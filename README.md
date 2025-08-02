@@ -14,6 +14,7 @@ No Ubuntu WSL, eu estava sempre a usar o comando `rm -rf {nome}`.Para evitar rep
 
 - `del` — Script em Python que elimina ficheiros e pastas.
 - `install.sh` — Script de instalação que move `del` para `/usr/local/bin`.
+- `uninstall.sh`- Script que remove o comando `del` do sistema.
 
 ---
 
@@ -39,8 +40,11 @@ O script irá:
 - Copiar o ficheiro del para `/usr/local/bin/`.
 - Torná-lo executável globalmente.
 
-
-
+## 🗑️ Desinstalar
+Se quiser remover o comando `del`do sistema, execute.
+```bash
+bash uninstall.sh
+```
 ## ❗ Atenção
 Este script elemina ficheiros e pastas permanetemente, sem enviar para a reciclagem/lixo.<br> 
 Use com cuidado!
