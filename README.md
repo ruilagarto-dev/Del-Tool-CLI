@@ -3,6 +3,7 @@
 Este projeto fornece um utilitário de linha de comandos chamado `del` que permite eliminar ficheiros e pastas diretamente a partir do terminal. Ele suporta tanto ficheiros únicos quanto pastas com conteúdo.
 
 ## 📷 Demostração
+
 <p align="center">
   <img src="demo/rmx-demo.gif" alt="Demonstração do script" />
 </p>
@@ -50,5 +51,5 @@ bash uninstall.sh
 ```
 
 ## ❗ Atenção
-Este script elemina ficheiros e pastas permanetemente, sem enviar para a reciclagem/lixo.<br> 
-Use com cuidado!
+Este script elemina ficheiros e pastas **permanetemente**, sem enviar para a reciclagem/lixo.<br> 
+**Use com cuidado!**
