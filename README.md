@@ -2,13 +2,12 @@
 
 Este projeto fornece um utilitário de linha de comandos chamado `del` que permite eliminar ficheiros e pastas diretamente a partir do terminal. Ele suporta tanto ficheiros únicos quanto pastas com conteúdo.
 
----
 
 ## 🎯 Por que criei este script?
 
 No Ubuntu WSL, eu estava sempre a usar o comando `rm -rf {nome}`.Para evitar repetir esse comando manualmente e para ter mensagens de erro mais claras e específicas, criei este script simples e direto para facilitar e tornar o processo mais seguro.
 
----
+
 
 ## 📂 Conteúdo
 
@@ -16,14 +15,12 @@ No Ubuntu WSL, eu estava sempre a usar o comando `rm -rf {nome}`.Para evitar rep
 - `install.sh` — Script de instalação que move `del` para `/usr/local/bin`.
 - `uninstall.sh`- Script que remove o comando `del` do sistema.
 
----
 
 ## ⚙️ Requisitos
 
 - Python 3 instalado no sistema.
 - Permissões para usar `sudo` (necessário para instalar o script em `/usr/local/bin`).
 
----
 
 ## 📦 Instalação
 
