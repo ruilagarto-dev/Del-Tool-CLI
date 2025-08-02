@@ -2,6 +2,9 @@
 
 Este projeto fornece um utilitário de linha de comandos chamado `del` que permite eliminar ficheiros e pastas diretamente a partir do terminal. Ele suporta tanto ficheiros únicos quanto pastas com conteúdo.
 
+## Demostração
+![Demonstração do script](demo/rmx-demo.mp4)
+
 
 ## 🎯 Por que criei este script?
 
@@ -38,7 +41,7 @@ O script irá:
 - Torná-lo executável globalmente.
 
 ## 🗑️ Desinstalar
-Se quiser remover o comando `del`do sistema, execute.
+Se quiser remover o comando `del` do sistema, execute.
 ```bash
 bash uninstall.sh
 ```
