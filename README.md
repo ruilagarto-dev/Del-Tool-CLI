@@ -1,56 +1,51 @@
-# del - Script para eliminar ficheiros e pastas via terminal
+# Del-Tool-CLI
 
-Este projeto fornece um utilitário de linha de comandos chamado `del` que permite eliminar ficheiros e pastas diretamente a partir do terminal. Ele suporta tanto ficheiros únicos quanto pastas com conteúdo.
+This project provides a command-line utility called `del` that allows you to delete files and folders directly from the terminal. It supports both single files and directories with content.
 
+## 🎯 Why did I create this script?
 
-## 🎯 Por que criei este script?
+On Ubuntu WSL, I was always using the command `rm -rf {name}`. To avoid repeating this command manually and to have clearer and more specific error messages, I created this simple and straightforward script to make the process easier and safer.
 
-No Ubuntu WSL, eu estava sempre a usar o comando `rm -rf {nome}`.Para evitar repetir esse comando manualmente e para ter mensagens de erro mais claras e específicas, criei este script simples e direto para facilitar e tornar o processo mais seguro.
+## 📂 Contents
 
+- `del` — Python script that deletes files and folders.
+- `install.sh` — Installation script that moves `del` to `/usr/local/bin`.
+- `uninstall.sh` — Script that removes the `del` command from the system.
 
+## ⚙️ Requirements
 
-## 📂 Conteúdo
+- Python 3 installed on the system.
+- Permissions to use `sudo` (required to install the script in `/usr/local/bin`).
 
-- `del` — Script em Python que elimina ficheiros e pastas.
-- `install.sh` — Script de instalação que move `del` para `/usr/local/bin`.
-- `uninstall.sh`- Script que remove o comando `del` do sistema.
+## 📦 Installation
 
+1. Clone this repository.
 
-## ⚙️ Requisitos
-
-- Python 3 instalado no sistema.
-- Permissões para usar `sudo` (necessário para instalar o script em `/usr/local/bin`).
-
-
-## 📦 Instalação
-
-1. Clone este repositório.
-
-2. Execute o script de instalação:
+2. Run the installation script:
 ```bash
 bash install.sh
 ```
-O script irá:
+The script will:
 
-- Verificar se o Python 3 está instalado.
-- Verificar se o ficheiro `del` existe.
-- Copiar o ficheiro del para `/usr/local/bin/`.
-- Torná-lo executável globalmente.
+- Check if Python 3 is installed.
+- Check if the `del` file exists.
+- Copy the `del` file to `/usr/local/bin/`.
+- Make it globally executable.
 
-## 🗑️ Desinstalar
-Se quiser remover o comando `del` do sistema, execute.
+## 🗑️ Uninstall
+
+If you want to remove the `del` command from the system, run:
 ```bash
 bash uninstall.sh
 ```
 
-
-## 📷 Demostração
+## 📷 Demo
 
 <p align="center">
-  <img src="demo/rmx-demo.gif" alt="Demonstração do script" />
+  <img src="demo/rmx-demo.gif" alt="Script demonstration" />
 </p>
 
+## ❗ Warning
 
-## ❗ Atenção
-Este script elemina ficheiros e pastas **permanetemente**, sem enviar para a reciclagem/lixo.<br> 
-**Use com cuidado!**
+This script deletes files and folders **permanently**, without sending them to the recycle bin/trash.<br>
+**Use with
