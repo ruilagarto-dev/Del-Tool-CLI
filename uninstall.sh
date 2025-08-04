@@ -3,27 +3,25 @@
 SCRIPT_NAME="del"
 TARGET_PATH="/usr/local/bin/$SCRIPT_NAME"
 
-# Verifica se o script está instalado
+# Check if the script is installed
 if [ ! -f "$TARGET_PATH" ]; then
-    echo "O comando '$SCRIPT_NAME' não está instalado em $TARGET_PATH."
+    echo "The command '$SCRIPT_NAME' is not installed at $TARGET_PATH."
     exit 1
 fi
 
-# Solicita confirmação
-read -p "Tem certeza que deseja desinstalar '$SCRIPT_NAME'? [s/N]: " confirm
-if [[ "$confirm" != "s" && "$confirm" != "S" ]]; then
-    echo "Desinstalação cancelada."
+# Ask for confirmation
+read -p "Are you sure you want to uninstall '$SCRIPT_NAME'? [y/N]: " confirm
+if [[ "$confirm" != "y" && "$confirm" != "Y" ]]; then
+    echo "Uninstallation cancelled."
     exit 0
 fi
 
-# Tenta remover o ficheiro
-echo "Removendo $TARGET_PATH..."
+# Try to remove the file
+echo "Removing $TARGET_PATH..."
 sudo rm "$TARGET_PATH"
 
-# Verifica se foi removido com sucesso
+# Check if it was successfully removed
 if [ ! -f "$TARGET_PATH" ]; then
-    echo "Desinstalação concluída com sucesso."
+    echo "Uninstallation completed successfully."
 else
-    echo "Erro: falha ao remover '$TARGET_PATH'."
-    exit 1
-fi
+    echo "Error: failed to
