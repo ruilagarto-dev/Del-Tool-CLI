@@ -4,30 +4,29 @@ SCRIPT_NAME="del"
 TARGET_DIR="/usr/local/bin"
 TARGET_PATH="$TARGET_DIR/$SCRIPT_NAME"
 
-# Verifica se python3 está instalado
+# Check if python3 is installed
 if ! command -v python3 &> /dev/null; then
-    echo "Erro: Python 3 não está instalado. Por favor, instale-o antes."
+    echo "Error: Python 3 is not installed. Please install it first."
     exit 1
 fi
 
-# Verifica se o script 'size' existe no diretório atual
+# Check if the 'del' script exists in the current directory
 if [ ! -f "$SCRIPT_NAME" ]; then
-    echo "Erro: Arquivo '$SCRIPT_NAME' não encontrado no diretório atual."
+    echo "Error: File '$SCRIPT_NAME' not found in the current directory."
     exit 1
 fi
 
-# Copia o script para /usr/local/bin
-echo "Copiando $SCRIPT_NAME para $TARGET_DIR..."
+# Copy the script to /usr/local/bin
+echo "Copying $SCRIPT_NAME to $TARGET_DIR..."
 sudo cp "$SCRIPT_NAME" "$TARGET_PATH"
 
-# Dá permissão executável
+# Give executable permission
 sudo chmod +x "$TARGET_PATH"
 
-# Verifica se a cópia foi bem sucedida
+# Check if the copy was successful
 if [ -f "$TARGET_PATH" ]; then
-    echo "Instalação concluída com sucesso!"
-    echo "Você pode usar o comando '$SCRIPT_NAME' em qualquer lugar do terminal."
+    echo "Installation completed successfully!"
+    echo "You can use the '$SCRIPT_NAME' command anywhere in the terminal."
 else
-    echo "Erro: falha na instalação."
-    exit 1
-fi
+    echo "Error: installation failed."
+    exit
