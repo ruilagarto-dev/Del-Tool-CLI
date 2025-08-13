@@ -4,7 +4,7 @@ This project provides a command-line utility called `del` that allows you to del
 
 ## 🎯 Why did I create this script?
 
-On Ubuntu WSL, I was always using the command `rm -rf {name}`. To avoid repeating this command manually and to have clearer and more specific error messages, I created this simple and straightforward script to make the process easier and safer.
+I was always using the command `rm -rf {name}`. To avoid repeating this command manually and to have clearer, I created this simple and straightforward script to make the process easier and safer.
 
 ## 📂 Contents
 
